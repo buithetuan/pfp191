@@ -4,7 +4,6 @@ class Main:
     def f1(self, inputString):
         # ===YOU CAN EDIT OR EVEN ADD NEW FUNCTIONS IN THE FOLLOWING PART========
         move = inputString.split(", ")
-        move = inputString.split(", ")
         for m in move:
             print(m)
         # end def
