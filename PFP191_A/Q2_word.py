@@ -16,10 +16,20 @@ class Main:
     def f2(self, fileName):
         # ===YOU CAN EDIT OR EVEN ADD NEW FUNCTIONS IN THE FOLLOWING PART========
         count = 0
+        
+        # count line
         with open(fileName, 'r') as file:
             for line in file:
                 count +=1
         print(count)
+        
+        # count words
+        total_words = 0
+        with open(fileName, 'r') as file:
+            for line in file:
+                words = line.split()
+                total_words += len(words)
+        print("Tổng số từ trong file là:", total_words)
         pass
 
         # end def
